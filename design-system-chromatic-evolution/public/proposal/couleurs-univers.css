@@ -1,0 +1,72 @@
+.chromatic-lab { padding-block: 34px 44px; color: var(--ink); }
+.chromatic-lab h3 { margin-bottom: 15px; }
+.chromatic-neutrals { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.chromatic-neutrals button, .chromatic-stop-list button { padding: 0; text-align: left; background: none; color: var(--ink); border: none; min-height: 44px; }
+.chromatic-neutrals i { display: block; height: 70px; border: 1px solid var(--line); border-radius: 8px; margin-bottom: 11px; }
+.chromatic-neutrals strong, .chromatic-neutrals code { display: block; font-size: 11px; font-weight: 400; font-family: var(--body); }
+.chromatic-neutrals code { color: var(--text); margin-top: 3px; }
+.chromatic-alternative { display: flex; align-items: center; gap: 8px; color: var(--text); font-size: 10px; margin-top: 12px; }
+.chromatic-alternative > i { width: 15px; height: 15px; border: 1px solid var(--line); border-radius: 3px; }
+.chromatic-alternative > button { border: none; background: none; color: var(--text); min-height: 32px; padding: 5px; font-size: 10px; }
+.chromatic-alternative code { font-family: var(--body); }
+.chromatic-signature-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 28px; }
+.chromatic-signature-heading h3 { margin: 0; }
+.chromatic-signature-heading .button { min-height: 40px; font-size: 11px; padding: 8px 16px; }
+.chromatic-signature { background: var(--signature); height: 120px; border-radius: 9px; margin-top: 13px; }
+.chromatic-signature-stops { display: flex; justify-content: space-between; margin-top: 9px; color: var(--text); font-size: 11px; }
+.chromatic-signature-stops code { font-family: var(--body); }
+.chromatic-universe-heading { margin-top: 34px; }
+.chromatic-tabs { display: flex; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.chromatic-tabs button { border: none; border-bottom: 2px solid transparent; background: none; padding: 12px 21px; min-height: 48px; font-size: 12px; flex: 1; white-space: nowrap; color: var(--text); }
+.chromatic-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 500; }
+.chromatic-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 24px; }
+.chromatic-universe-art { display: grid; place-items: center; background: var(--universe-gradient); border-radius: 10px; height: 200px; }
+.chromatic-universe-art .flower { width: 100px; height: 100px; color: var(--white); opacity: .85; }
+.chromatic-stop-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+.chromatic-stop-list button { display: flex; gap: 9px; align-items: center; }
+.chromatic-stop-list i { width: 28px; height: 28px; flex: none; border-radius: 5px; }
+.chromatic-stop-list strong, .chromatic-stop-list code { display: block; font-size: 10px; font-weight: 400; font-family: var(--body); }
+.chromatic-stop-list code { color: var(--text); margin-top: 3px; }
+.chromatic-preview { border: 1px solid var(--sample-line); background: var(--sample-bg); color: var(--sample-ink); border-radius: var(--radius); padding: 23px; transition: background .25s, color .25s; }
+.chromatic-lab[data-surface="dark"] .chromatic-preview { --focus: var(--signature-end); }
+.chromatic-preview > p { color: var(--sample-text); font-size: 12px; line-height: 1.8; }
+.chromatic-preview > h3 { font-size: 24px; margin-top: 20px; margin-bottom: 9px; }
+.chromatic-preview-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; font-size: 10px; color: var(--sample-text); }
+.chromatic-preview-toolbar > div { display: flex; gap: 3px; padding: 3px; border: 1px solid var(--sample-line); background: var(--sample-surface); border-radius: 7px; }
+.chromatic-preview-toolbar button { padding: 6px 10px; border: none; min-height: 32px; border-radius: 4px; background: none; color: var(--sample-text); font-size: 10px; }
+.chromatic-preview-toolbar button[aria-pressed="true"] { background: var(--sample-bg); color: var(--sample-ink); }
+.chromatic-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 17px; }
+.chromatic-actions .button { font-size: 10px; padding: 10px 16px; min-height: 42px; }
+.chromatic-primary { color: var(--sample-bg); background: var(--sample-ink); }
+.chromatic-accent { padding: 1.5px !important; border: none; background: var(--universe-gradient); }
+.chromatic-accent > span { padding: 10px 16px; border-radius: inherit; color: var(--sample-ink); background: var(--sample-bg); }
+.chromatic-card { position: relative; overflow: hidden; display: block; width: 100%; text-align: left; padding: 17px; margin-top: 17px; border: 1px solid var(--sample-line); border-radius: var(--radius); color: var(--sample-ink); background: var(--sample-bg); }
+.chromatic-card::before { content: ''; position: absolute; left: 0; top: 13px; bottom: 13px; width: 3px; background: var(--universe-gradient); }
+.chromatic-card strong, .chromatic-card span { display: block; font-size: 12px; font-weight: 500; }
+.chromatic-card span { font-size: 11px; color: var(--sample-text); margin-top: 4px; font-weight: 400; }
+.chromatic-card:hover { background: var(--sample-surface); }
+.chromatic-rules { border-top: 1px solid var(--line); margin-top: 25px; }
+.chromatic-rules summary { cursor: pointer; min-height: 52px; padding-block: 17px; font-size: 12px; }
+.chromatic-contrast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 15px; }
+.chromatic-contrast-grid p { font-size: 12px; line-height: 1.8; color: var(--text); margin-top: 12px; }
+.chromatic-contrast-grid p strong { color: var(--ink); font-weight: 500; }
+.chromatic-contrast-selects { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.chromatic-contrast-selects select { display: block; width: 100%; margin-top: 7px; min-height: 44px; border: 1px solid var(--line); color: var(--ink); background: var(--white); padding: 10px; border-radius: 7px; }
+.chromatic-contrast-result { display: flex; justify-content: space-between; align-items: center; gap: 22px; margin-top: 15px; }
+.chromatic-contrast-result > span:first-child { border: 1px solid var(--line); border-radius: 8px; padding: 15px 24px; font-size: 30px; line-height: 1; font-family: var(--heading); }
+.chromatic-contrast-result small { font-size: 12px; line-height: 1.8; }
+.chromatic-contrast-result > span:last-child { font-size: 20px; color: var(--ink); }
+#chromatic-feedback { min-height: 28px; margin-top: 15px; }
+@media (max-width: 768px) {
+  .chromatic-neutrals { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 12px; }
+  .chromatic-panel, .chromatic-contrast-grid { grid-template-columns: 1fr; gap: 23px; }
+  .chromatic-tabs button { flex: none; padding-inline: 13px; font-size: 11px; }
+  .chromatic-signature-heading h3 { font-size: 13px; }
+  .chromatic-signature-heading .button { font-size: 9px; padding-inline: 12px; }
+  .chromatic-stop-list { gap: 8px; }
+  .chromatic-stop-list i { width: 24px; height: 24px; }
+  .chromatic-stop-list strong, .chromatic-stop-list code { font-size: 9px; }
+  .chromatic-signature { height: 100px; }
+}
+@media (prefers-reduced-motion: reduce) { .chromatic-lab *, .chromatic-lab *::before { transition: none !important; animation: none !important; } }
+@media (forced-colors: active) { .chromatic-lab :focus-visible, .chromatic-lab select:focus { outline: 2px solid Highlight; outline-offset: 3px; box-shadow: none; } .chromatic-tabs button[aria-selected="true"] { border-bottom-color: Highlight; } .chromatic-accent { border: 1px solid ButtonText; } .chromatic-neutrals i, .chromatic-universe-art, .chromatic-signature { forced-color-adjust: none; } }
